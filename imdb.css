@@ -29,7 +29,7 @@ a:active {
     color: white;
 }
 
-.columncontainer {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,15 +42,6 @@ a:active {
     font-family: Red+Hat+Display;
     font-size: 13px;
     padding: 0px;
-}
-
-.rowcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: -8px;
-    margin-top: 8px;
 }
 
 /*----------GENERAL DESKTOP----------*/
@@ -287,6 +278,7 @@ a:active {
     .whattowatchdiv h3 {
         height: 25px;
         margin-top: 3px;
+        font-size: 13px;
     }
 
     .newstitlediv {
@@ -583,6 +575,77 @@ a:active {
     }
 }
 
+/*----------MENU GENERAL----------*/
+
+.menuheaderdiv {
+    background-color: #E3BF05;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.menuheaderheading {
+    font-family: Inter;
+    font-size: 32px;
+}
+
+.menulinklist {
+    color: white;
+    list-style-type: none;
+    list-style-position: outside;
+    justify-content: left;
+    padding-left: 0px;
+}
+
+.menulinklist li {
+    margin-top: 6px;
+}
+
+.menulinklist a {
+    display: inline;
+}
+
+.menulinklist a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.menulinklist a:visited {
+    color: white;
+}
+
+.menulinklist a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.menulinklist a:active {
+    color: black;
+}
+
 /*----------MENU DESKTOP----------*/
 
+@media (min-width: 1000px) {
+    .menumaindiv {
+        display: grid;
+        grid-template-columns: 307px 307px;
+        grid-template-rows: 246px 217px;
+        grid-row-gap: 20px;
+        grid-column-gap: 154px;
+        margin-top: 30px;
+    }
+
+    .menutrendingdiv {
+        width: 307px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        border: 2px solid white;
+    }
+}
+
 /*----------MENU MOBILE----------*/
+
+@media (max-width: 999px) {
+
+}
