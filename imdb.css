@@ -26,7 +26,7 @@ a:hover {
 }
 
 a:active {
-    color: white;
+    color: black;
 }
 
 .container {
@@ -106,7 +106,7 @@ a:active {
     }
 
     .navbar input[type=text] {
-        background-image: url('search.png');
+        background-image: url('icons/search.png');
         background-repeat: no-repeat;
         background-position: 11px 9px;
         padding-left: 40px;
@@ -583,6 +583,7 @@ a:active {
     justify-content: center;
     align-items: center;
     height: 40px;
+    margin-bottom: -5px;
 }
 
 .menuheaderheading {
@@ -617,11 +618,11 @@ a:active {
 
 .menulinklist a:hover {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .menulinklist a:active {
-    color: black;
+    color: white;
 }
 
 /*----------MENU DESKTOP----------*/
@@ -630,22 +631,163 @@ a:active {
     .menumaindiv {
         display: grid;
         grid-template-columns: 307px 307px;
-        grid-template-rows: 246px 217px;
-        grid-row-gap: 20px;
+        grid-template-rows: 186px 52px 160px 160px 22px 98px 37px;
         grid-column-gap: 154px;
+        grid-row-gap: 0px;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .menutrendingdiv {
-        width: 307px;
         grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    .menuawardseventsdiv {
+        grid-column: 1 / 2;
+        grid-row: 3 / 6;
+    }
+
+    .menucommunitydiv {
+        grid-column: 1 / 2;
+        grid-row: 6 / 8;
+    }
+
+    .menuwatchdiv {
+        grid-column: 2 / 3;
         grid-row: 1 / 2;
-        border: 2px solid white;
+    }
+
+    .menumoviesdiv {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+
+    .menutvshowsdiv {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .menucelebsdiv {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
     }
 }
 
 /*----------MENU MOBILE----------*/
 
 @media (max-width: 999px) {
+    .menumaindiv {
+        display: grid;
+        grid-template-columns: 307px;
+        grid-template-rows: 238px 342px 135px 186px 212px 160px 150px;
+        grid-row-gap: 0px;
+        margin-top: 30px;
+    }
 
+    .menutrendingdiv {
+        grid-row: 1 / 2;
+    }
+
+    .menuawardseventsdiv {
+        grid-row: 2 / 3;
+    }
+
+    .menucommunitydiv {
+        grid-row: 3 / 4;
+    }
+
+    .menuwatchdiv {
+        grid-row: 4 / 5;
+    }
+
+    .menumoviesdiv {
+        grid-row: 5 / 6;
+    }
+
+    .menutvshowsdiv {
+        grid-row: 6 / 7;
+    }
+
+    .menucelebsdiv {
+        grid-row: 7 / 8;
+    }
+}
+
+/*----------TOP 250 GENERAL----------*/
+
+.titledivundertitle {
+    font-family: Inter;
+    font-size: 14px;
+    margin: 0px;
+}
+
+/*----------TOP 250 DESKTOP----------*/
+
+@media (min-width: 1000px) {
+    .top250maindiv {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 654px 279px;
+        grid-template-rows: 70px 235px 477px;
+        grid-gap: 7px;
+    }
+
+    .top250titlediv {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        background-color: #E3BF05;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top250titlediv h1 {
+        font-family: Inter;
+        font-size: 36px;
+        margin: 0px;
+    }
+
+    .top250moviestable {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        border-collapse: collapse;
+    }
+
+    .top250moviestable tr {
+        height: 114px;
+        background-color: #E3BF05;
+        border-bottom: 7px solid #323030;
+    }
+}
+
+/*----------TOP 250 MOBILE----------*/
+
+@media (max-width: 999px) {
+    .top250maindiv {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 126px 229px;
+        grid-template-rows: 70px 27px 622px;
+        grid-gap: 13px;
+    }
+
+    .top250titlediv {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        background-color: #E3BF05;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top250titlediv h1 {
+        font-family: Inter;
+        font-size: 24px;
+        margin: 0px;
+    }
 }
