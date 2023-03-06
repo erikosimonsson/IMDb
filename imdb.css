@@ -5,7 +5,7 @@ body {
     font-family: Inter;
 }
 
-a {
+.navbar a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,9 +440,9 @@ a:active {
     }
 
     .whattowatchdiv h3 {
-        height: 25px;
-        margin-top: 3px;
-        margin-bottom: 10px;
+        height: 22px;
+        margin-top: -1px;
+        font-size: 13px;
     }
 
     .newstitlediv {
@@ -466,12 +466,13 @@ a:active {
 
     .newsdivmain h2 {
         font-size: 20px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 1px;
+        margin-bottom: 3px;
     }
 
     .newsmainimg {
         width: 357px;
+        margin-top: 2px;
     }
 
     .newsotherimg {
@@ -722,6 +723,12 @@ a:active {
     margin: 0px;
 }
 
+.top250table1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*----------TOP 250 DESKTOP----------*/
 
 @media (min-width: 1000px) {
@@ -760,6 +767,52 @@ a:active {
         height: 114px;
         background-color: #E3BF05;
         border-bottom: 7px solid #323030;
+        display: flex;
+        align-items: center;
+    }
+
+    .top250table1 {
+        width: 81px;
+    }
+
+    .top250table2 {
+        width: 420px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .top250chartsdiv {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background-color: #E3BF05;
+    }
+
+    .top250genresdiv {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background-color: #E3BF05;
+    }
+
+    .top250sideheader {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .top250sidelist {
+        list-style-type: none;
+        list-style-position: outside;
+        justify-content: left;
+        padding-left: 0px;
+        margin-left: 10px;
+    }
+
+    .top250sidelist li {
+        font-family: Inter;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 4px;
     }
 }
 
@@ -789,5 +842,68 @@ a:active {
         font-family: Inter;
         font-size: 24px;
         margin: 0px;
+    }
+
+    .top250moviestable {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        border-collapse: collapse;
+    }
+
+    .top250moviestable tr {
+        height: 114px;
+        background-color: #E3BF05;
+        border-bottom: 13px solid #323030;
+        display: flex;
+        align-items: center;
+    }
+
+    .top250table1 {
+        width: 81px;
+    }
+
+    .top250table2 {
+        width: 165px;
+        font-weight: bold;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .top250chartsdiv {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-color: #E3BF05;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .top250genresdiv {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background-color: #E3BF05;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .top250sideheader {
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    .top250sidelist {
+        height: 0px;
+        overflow: hidden;
+        margin: 0px;
+    }
+
+    .top250sidelist li {
+        font-family: Inter;
+        font-weight: bold;
+        font-size: 0px;
+        margin-bottom: 0px;
     }
 }
