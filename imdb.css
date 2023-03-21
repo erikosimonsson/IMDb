@@ -50,6 +50,7 @@ a:active {
     button {
         background-color: black;
         color: #E3BF05;
+        border: none;
         border-radius: 8px;
         font-family: Inter;
         font-weight: bold;
@@ -67,6 +68,7 @@ a:active {
     button {
         background-color: black;
         color: #E3BF05;
+        border: none;
         border-radius: 4px;
         font-family: Inter;
         font-weight: bold;
@@ -905,5 +907,56 @@ a:active {
         font-weight: bold;
         font-size: 0px;
         margin-bottom: 0px;
+    }
+}
+
+/*----------MOVIE GENERAL----------*/
+
+.moviemain {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------MOVIE DESKTOP----------*/
+
+@media (min-width: 1000px) {
+    .movietitlediv {
+        background-color: #E3BF05;
+        width: 940px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moviemediadiv {
+        margin-top: 9px;
+        background-color: #E3BF05;
+        width: 940px;
+        height: 383px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movieinfodiv {
+        
+    }
+}
+
+/*----------MOVIE MOBILE----------*/
+
+@media (max-width: 999px) {
+    .movietitlediv {
+        background-color: #E3BF05;
+        width: 368px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
