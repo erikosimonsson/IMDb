@@ -929,8 +929,13 @@ a:active {
         width: 940px;
         height: 70px;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
+    }
+
+    .movietitleheader {
+        font-size: 36px;
+        margin-left: 10px;
     }
 
     .moviemediadiv {
@@ -943,8 +948,30 @@ a:active {
         align-items: center;
     }
 
+    .moviemediaposter {
+        border: 1px solid black;
+    }
+
+    .moviemediatrailer {
+        margin-left: 8px;
+        border: 1px solid black;
+        height: 369px;
+    }
+
     .movieinfodiv {
-        
+        margin-top: 9px;
+        background-color: #E3BF05;
+        width: 940px;
+    }
+
+    .synopsisheader {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .synopsisparagraph {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -956,7 +983,74 @@ a:active {
         width: 368px;
         height: 70px;
         display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .movietitleheader {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .moviemediadiv {
+        margin-top: 9px;
+        background-color: #E3BF05;
+        width: 368px;
+        height: auto;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .moviemediaposter {
+        border: 1px solid black;
+        height: 141px;
+        margin: 5px;
+    }
+
+    .moviemediatrailer {
+        margin-right: 5px;
+        border: 1px solid black;
+        height: 141px;
+    }
+
+    .movieinfodiv {
+        margin-top: 9px;
+        background-color: #E3BF05;
+        width: 368px;
+    }
+
+    .synopsisheader {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .synopsisparagraph {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.logindiv {
+    background-color: #E3BF05;
+    margin-top: 10vh;
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logintitle {
+    font-size: 36px;
+    margin: 4px;
+}
+
+.loginbar {
+    margin-top: 10px;
+}
+
+.loginbuttondiv {
+    display: flex;
+    flex-direction: row;
 }
