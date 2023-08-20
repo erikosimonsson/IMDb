@@ -958,6 +958,14 @@ a:active {
         height: 369px;
     }
 
+    .movieshortinfodiv {
+        margin-top: 9px;
+        background-color: #E3BF05;
+        width: 940px;
+        display: flex;
+        justify-content: space-around;
+    }
+
     .movieinfodiv {
         margin-top: 9px;
         background-color: #E3BF05;
@@ -1014,6 +1022,22 @@ a:active {
         height: 141px;
     }
 
+    .movieshortinfodiv {
+        margin-top: 9px;
+        background-color: #E3BF05;
+        width: 368px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .shortinfobit {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
     .movieinfodiv {
         margin-top: 9px;
         background-color: #E3BF05;
@@ -1033,8 +1057,9 @@ a:active {
 
 .logindiv {
     background-color: #E3BF05;
-    margin-top: 10vh;
+    margin-top: 50px;
     width: 368px;
+    height: 184px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1042,15 +1067,43 @@ a:active {
 }
 
 .logintitle {
-    font-size: 36px;
-    margin: 4px;
+    font-size: 24px;
+    margin: 0px;
 }
 
 .loginbar {
     margin-top: 10px;
+    width: 76%;
+    height: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 .loginbuttondiv {
+    margin-top: 14px;
+    width: 50%;
+    height: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+/*----------PRINT VIEW----------*/
+
+@media print {
+    button {
+        display: none;
+    }
+
+    .navbar, .top250chartsdiv, .top250genresdiv {
+        display: none;
+        overflow: hidden;
+    }
+
+    .top250moviestable tr {
+        border-bottom: 0px solid white;
+    }
 }
