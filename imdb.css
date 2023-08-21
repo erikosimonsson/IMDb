@@ -1098,6 +1098,14 @@ a:active {
         display: none;
     }
 
+    .top250maindiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 84%;
+    }
+
     .navbar, .top250chartsdiv, .top250genresdiv {
         display: none;
         overflow: hidden;
@@ -1105,5 +1113,10 @@ a:active {
 
     .top250moviestable tr {
         border-bottom: 0px solid white;
+    }
+
+    .top250table2 {
+        width: 500px;
+        font-size: 22px;
     }
 }
